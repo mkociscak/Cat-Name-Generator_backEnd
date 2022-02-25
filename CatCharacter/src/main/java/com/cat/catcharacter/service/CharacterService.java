@@ -15,18 +15,16 @@ public class CharacterService {
 
     private CharacterRepository characterRepository;
 
-        @Autowired
-        public void setCharacterRepository(CharacterRepository characterRepository) {
-            this.characterRepository = characterRepository;
+    @Autowired
+    public void setCharacterRepository(CharacterRepository characterRepository) {
+        this.characterRepository = characterRepository;
     }
-
 
     //getAllCharacters
     public List<Character> getAllCharacters() {
         System.out.println("getting all Characters");
         return characterRepository.findAll();
-        }
-
+    }
 
     //getCharacter
     public Optional getCharacter(Long characterId) {
@@ -39,4 +37,13 @@ public class CharacterService {
         }
     }
 
+
+    // create
+
+    // update
+
+    // delete
 }
+
+
+
