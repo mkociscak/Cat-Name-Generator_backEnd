@@ -30,15 +30,31 @@ public class CharacterController {
     //getCharacter
     @GetMapping(path = "/character/{characterId}")
     public Optional getCharacter(@PathVariable Long characterId) {
-        System.out.println("getting one Character ==>");
+        System.out.println("getting one Character...");
         return characterService.getCharacter(characterId);
     }
-
+//--------------------------------------------
 
     // create
+    @PostMapping("/character/")
+    public Character createCharacter(@RequestBody Character characterObject) {
+        System.out.println("creating Character...");
+        return characterService.createCharacter(characterObject);
+    }
 
     // update
+    @PutMapping(path = "/character/{characterId}")
+    public Character updateCharacter(@PathVariable(value = "characterId") Long characterId, @RequestBody Character characterObject) {
+        System.out.println("updating Character...");
+        return characterService.updateCharacter(characterId, characterObject);
+    }
 
     // delete
+    @DeleteMapping(path = "/character/{characterId}")
+    public Optional<Character> deleteCharacter(@PathVariable(value = "characterId") Long characterId) {
+        System.out.println("deleting Character...");
+        return characterService.deleteCharacter(characterId);
+    }
+
 
 }
