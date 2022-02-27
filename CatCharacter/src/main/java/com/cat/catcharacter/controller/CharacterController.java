@@ -1,5 +1,6 @@
 package com.cat.catcharacter.controller;
 
+import com.cat.catcharacter.exceptions.InformationExistsException;
 import com.cat.catcharacter.model.Character;
 import com.cat.catcharacter.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,10 @@ public class CharacterController {
     }
 //--------------------------------------------
 
+
+
+
+
     // create
     @PostMapping("/character/")
     public Character createCharacter(@RequestBody Character characterObject) {
@@ -42,12 +47,19 @@ public class CharacterController {
         return characterService.createCharacter(characterObject);
     }
 
+
+
+
+
     // update
     @PutMapping(path = "/character/{characterId}")
     public Character updateCharacter(@PathVariable(value = "characterId") Long characterId, @RequestBody Character characterObject) {
         System.out.println("updating Character...");
         return characterService.updateCharacter(characterId, characterObject);
     }
+
+
+
 
     // delete
     @DeleteMapping(path = "/character/{characterId}")
@@ -58,3 +70,15 @@ public class CharacterController {
 
 
 }
+
+/*@PostMapping("/character/")
+    public Character createCharacter(@RequestBody Character characterObject) {
+        System.out.println("creating Character...");
+        return characterService.createCharacter(characterObject);
+    }
+@PutMapping(path = "/character/{characterId}")
+    public Character updateCharacter(@PathVariable(value = "characterId") Long characterId, @RequestBody Character characterObject) {
+        System.out.println("updating Character...");
+        return characterService.updateCharacter(characterId, characterObject);
+
+ */

@@ -8,6 +8,6 @@ import com.cat.catcharacter.model.Character;
 
 @Repository
 public interface CharacterRepository extends JpaRepository<Character, Long> {
-//    Character getCharacter(Long characterId);
+    //Character getCharacter(Long characterId);
     //Character getCharacterByGender(String Gender);
 }

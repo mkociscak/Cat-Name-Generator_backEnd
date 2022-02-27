@@ -63,7 +63,9 @@ public class CharacterService {
                 updateCharacter.setGender(characterObject.getGender());
                 updateCharacter.setPhysique(characterObject.getPhysique());
                 updateCharacter.setPersonality(characterObject.getPersonality());
+                updateCharacter.setVocal(characterObject.getVocal());
                 return characterRepository.save(updateCharacter);
+
             }
         } else {
             throw new InformationNotFoundException("character with id not found");

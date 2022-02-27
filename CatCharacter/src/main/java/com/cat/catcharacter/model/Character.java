@@ -2,6 +2,8 @@ package com.cat.catcharacter.model;
 
 import javax.persistence.*;
 import java.util.List;
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
 
 
 @Entity
@@ -23,15 +25,19 @@ public class Character {
     @Column
     private String personality;
 
+    @Column
+    private String vocal;
+
 
     public Character() {
     }
 
-    public Character(Long characterId, String gender, String physique, String personality) {
+    public Character(Long characterId, String gender, String physique, String personality, String vocal) {
         this.characterId = characterId;
         this.gender = gender;
         this.physique = physique;
         this.personality = personality;
+        this.vocal = vocal;
     }
 
     public Long getCharacterId() {
@@ -66,6 +72,16 @@ public class Character {
         this.personality = personality;
     }
 
+    public String getVocal() {
+        return vocal;
+    }
+
+    public void setVocal(String vocal) {
+        this.vocal = vocal;
+    }
+
+
+
     @Override
     public String toString() {
         return "Character{" +
@@ -73,9 +89,9 @@ public class Character {
                 ", gender='" + gender + '\'' +
                 ", physique='" + physique + '\'' +
                 ", personality='" + personality + '\'' +
+                ", vocal='" + vocal + '\'' +
                 '}';
     }
-
 
 
 }
