@@ -1,13 +1,11 @@
 package com.cat.catcharacter.model;
 
 import javax.persistence.*;
-import java.util.List;
-import org.hibernate.annotations.LazyCollection;
-import org.hibernate.annotations.LazyCollectionOption;
+
 
 
 @Entity
-@Table(name = "Character")
+@Table(name = "character")
 
 public class Character {
 

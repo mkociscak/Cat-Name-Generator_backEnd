@@ -23,25 +23,26 @@ public class CharacterService {
 
     //getAllCharacters
     public List<Character> getAllCharacters() {
-        System.out.println("getting all Characters");
+        System.out.println("getting all Characters...");
         return characterRepository.findAll();
     }
 
     //getCharacter
     public Optional getCharacter(Long characterId) {
         Optional character = characterRepository.findById(characterId);
-        System.out.println("getting one Character ==>");
+        System.out.println("getting one Character...");
         if (character.isPresent()) {
             return character;
         } else {
             throw new InformationNotFoundException("character with id " + characterId + " not found");
         }
     }
+
 //--------------------------------------------
 
     // create
     public Character createCharacter(Character characterObject) {
-        Optional<Character> character = characterRepository.findById(characterObject.getCharacterId());
+        Character character = characterRepository.findByCharacterId(characterObject.getCharacterId());
         System.out.println("creating one Character ==>");
         if (character != null) {
             throw new InformationExistsException("character with id already exists");
@@ -53,22 +54,18 @@ public class CharacterService {
     // update
     public Character updateCharacter(Long characterId, Character characterObject) {
         Optional<Character> character = characterRepository.findById(characterId);
-        System.out.println("updating one Character ==>");
+
         if (character.isPresent()) {
-            if (characterObject.getCharacterId().equals(character.get().getCharacterId())) {
-                System.out.println("Same");
-                throw new InformationExistsException("character with id " + characterId + " already exists");
-            } else {
                 Character updateCharacter = characterRepository.findById(characterId).get();
                 updateCharacter.setGender(characterObject.getGender());
                 updateCharacter.setPhysique(characterObject.getPhysique());
                 updateCharacter.setPersonality(characterObject.getPersonality());
                 updateCharacter.setVocal(characterObject.getVocal());
+                System.out.println("updating one Character...");
                 return characterRepository.save(updateCharacter);
 
-            }
-        } else {
-            throw new InformationNotFoundException("character with id not found");
+                } else {
+                    throw new InformationNotFoundException("Character with id not found. Cannot update");
         }
     }
 

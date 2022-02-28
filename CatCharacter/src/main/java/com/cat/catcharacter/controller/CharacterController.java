@@ -1,6 +1,5 @@
 package com.cat.catcharacter.controller;
 
-import com.cat.catcharacter.exceptions.InformationExistsException;
 import com.cat.catcharacter.model.Character;
 import com.cat.catcharacter.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
