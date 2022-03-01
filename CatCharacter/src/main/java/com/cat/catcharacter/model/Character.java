@@ -3,7 +3,6 @@ package com.cat.catcharacter.model;
 import javax.persistence.*;
 
 
-
 @Entity
 @Table(name = "character")
 

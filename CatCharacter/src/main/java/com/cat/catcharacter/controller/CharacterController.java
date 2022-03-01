@@ -37,8 +37,6 @@ public class CharacterController {
 
 
 
-
-
     // create
     @PostMapping("/character/")
     public Character createCharacter(@RequestBody Character characterObject) {
@@ -47,17 +45,12 @@ public class CharacterController {
     }
 
 
-
-
-
     // update
     @PutMapping(path = "/character/{characterId}")
     public Character updateCharacter(@PathVariable(value = "characterId") Long characterId, @RequestBody Character characterObject) {
         System.out.println("updating Character...");
         return characterService.updateCharacter(characterId, characterObject);
     }
-
-
 
 
     // delete
@@ -70,14 +63,3 @@ public class CharacterController {
 
 }
 
-/*@PostMapping("/character/")
-    public Character createCharacter(@RequestBody Character characterObject) {
-        System.out.println("creating Character...");
-        return characterService.createCharacter(characterObject);
-    }
-@PutMapping(path = "/character/{characterId}")
-    public Character updateCharacter(@PathVariable(value = "characterId") Long characterId, @RequestBody Character characterObject) {
-        System.out.println("updating Character...");
-        return characterService.updateCharacter(characterId, characterObject);
-
- */

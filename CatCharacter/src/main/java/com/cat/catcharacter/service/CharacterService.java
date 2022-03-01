@@ -1,6 +1,5 @@
 package com.cat.catcharacter.service;
 
-
 import com.cat.catcharacter.exceptions.InformationExistsException;
 import com.cat.catcharacter.exceptions.InformationNotFoundException;
 import com.cat.catcharacter.model.Character;
