@@ -6,7 +6,9 @@ Select the characteristic button which most closely resembles your own cat from 
 
 :octocat: :octocat: :octocat:
 &nbsp;&nbsp;
-## <ins> User Stories: </ins>
+
+![68879373_2188564807919003_8196150206228594688_n](https://user-images.githubusercontent.com/77941853/156430554-996e5630-7d9d-4a8a-94c0-3426e5f8def2.jpg)
+![IMG_2930](https://user-images.githubusercontent.com/77941853/156430583-ade3931a-4796-4f21-b186-e28579cc7f1a.JPG)## <ins> User Stories: </ins>
 &nbsp;&nbsp;
 <ol>
 <li>As the user, I can clearly view the question (number 1) about my cat and I can make my selection by clicking on the corresponding button.</li>
