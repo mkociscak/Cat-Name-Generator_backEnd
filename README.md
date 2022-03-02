@@ -26,3 +26,5 @@ Select the characteristic button which most closely resembles your own cat from 
 &nbsp;&nbsp;
 ## <ins> ERD </ins>
 ![CatNameGenerator_ERD_02](https://user-images.githubusercontent.com/77941853/155630139-5968cb09-18d4-474b-803a-e85abcf4ad54.png)
+  
+  ![ERD3](https://user-images.githubusercontent.com/77941853/156430250-48c58f41-2df1-4d4f-846f-c61a0a97f3a6.png)
