@@ -4,7 +4,9 @@ This app can help you find the purrfect name for your new cat friend. Using Java
 Select the button with the characteristic which most closely resembles your cat from the provided options on each of the four quesion pages. Then click the generate name button on the last page to find a new option for your fuzzy, feline friend.
 &nbsp;&nbsp;
 &nbsp;&nbsp;
+
 :octocat: :octocat: :octocat:
+&nbsp;&nbsp;
 &nbsp;&nbsp;
 
 ## <ins> Inspiration: </ins>
@@ -40,6 +42,8 @@ Select the button with the characteristic which most closely resembles your cat 
 <li>As the user I can clearly view the next question (number 3) about my cat and I can make my selection by clicking on the corresponding button.</li>
 
 <li>As the user, when I click on the button of my selection for question number 3, I will be taken to a new page with question number 4.</li>
+  
+<li>As the user I can clearly view the next question (number 4) about my cat and I can make my selection by clicking on the corresponding button.</li>
   
 <li>As the user, when I click on the button of my selection for question number 4, I will be taken to a new page that displays a new name I can use for my cat!</li>
 <li>As the user, I can click on the start over button to return to the first page.</li>
