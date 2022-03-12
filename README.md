@@ -7,10 +7,11 @@ Select the button with the characteristic which most closely resembles your cat 
 
 :octocat: :octocat: :octocat:
 &nbsp;&nbsp;
+&nbsp;&nbsp;<br>
 &nbsp;&nbsp;
 
 ## <ins> Inspiration: </ins>
-&nbsp;&nbsp;
+
 <ol>
   <li>Mosho the cat rapper and his cats</li>
 
@@ -21,7 +22,7 @@ Select the button with the characteristic which most closely resembles your cat 
 ![Milo_01 copy](https://user-images.githubusercontent.com/77941853/156898256-85539659-700e-4482-b6c9-0d88e77ac1f1.jpg)
 &nbsp;&nbsp;
 
- <li>Milosevich, Otyssee, Squeaky - My cats</li>
+ <li>Milosevich, Otyssee, [Squeaky] - My cats</li>
   <li>Mr. Meowington - deadmau5</li>
   <li>Mrs. Whiskerson - Friends</li>
   
@@ -29,7 +30,7 @@ Select the button with the characteristic which most closely resembles your cat 
   
 &nbsp;&nbsp;
 ## <ins> User Stories: </ins>
-&nbsp;&nbsp;
+
 <ol>
 <li>As the user, I can clearly view the question (number 1) about my cat and I can make my selection by clicking on the corresponding button.</li>
 
@@ -53,6 +54,18 @@ Select the button with the characteristic which most closely resembles your cat 
 
 ![ERD3](https://user-images.githubusercontent.com/77941853/157526750-8837bac5-c331-4576-a077-0df6a377221f.jpg)
   
+
 &nbsp;&nbsp;
-## <ins> Columns & data </ins> 
+## <ins> Endpoints </ins>
+  
+/api/character/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[POST]<br>
+/api/character/getAll&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GET]<br>
+/api/character/{characterId}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[GET]<br>
+/api/character/{characterId}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[PUT]<br>
+/api/character/{characterId}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[DELETE]<br>
+
+  
+&nbsp;&nbsp;
+## <ins> Columns & data(frontEnd) </ins> 
+  
 ![columns](https://user-images.githubusercontent.com/77941853/157526713-9c00ba57-81f8-4ea6-a278-f7a6ee21ae3f.jpg) 
