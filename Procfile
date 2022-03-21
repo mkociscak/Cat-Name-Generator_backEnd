@@ -1,1 +1,1 @@
-web: java -jar target/CatCharacter-1.0.0.jar
+web: java -jar target/CatCharacter/src-1.0.0.jar
